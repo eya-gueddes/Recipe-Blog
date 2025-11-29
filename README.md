@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RecipeBlog
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# Recipe-Blog
+A web application that allows users to browse, search, and manage cooking recipes in a clean and intuitive interface.
+>>>>>>> 7e1042f3d6c2cd11095a4c654214b00856d02ffd
