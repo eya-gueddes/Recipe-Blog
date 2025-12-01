@@ -1,1 +1,45 @@
-<p>recipe-details works!</p>
+<div class="p-6" *ngIf="!isLoading && recipe; else loadingOrError">
+  <button
+    routerLink="/recipes"
+    class="mb-4 text-sm text-blue-600 hover:underline"
+  >
+    ← Back to recipes
+  </button>
+
+  <div class="max-w-3xl mx-auto bg-white rounded-lg shadow p-6">
+    <img
+      [src]="recipe.imageUrl"
+      [alt]="recipe.title"
+      class="w-full max-h-72 object-cover rounded mb-4"
+    />
+
+    <h1 class="text-3xl font-bold mb-2">{{ recipe.title }}</h1>
+
+    <p class="text-gray-600 mb-4">
+      {{ recipe.meal }} • Serves {{ recipe.servings }}
+      <span *ngIf="recipe.prepTime"> • Prep: {{ recipe.prepTime }} min</span>
+      <span *ngIf="recipe.cookTime"> • Cook: {{ recipe.cookTime }} min</span>
+    </p>
+
+    <h2 class="text-xl font-semibold mb-2">Ingredients</h2>
+    <ul class="list-disc list-inside mb-4">
+      <li *ngFor="let ing of recipe.ingredients">
+        {{ ing.quantity }} {{ ing.name }}
+      </li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mb-2">Instructions</h2>
+    <ol class="list-decimal list-inside space-y-1">
+      <li *ngFor="let step of recipe.instructions">
+        {{ step.description }}
+      </li>
+    </ol>
+  </div>
+</div>
+
+<ng-template #loadingOrError>
+  <div class="p-6">
+    <p *ngIf="isLoading">Loading recipe...</p>
+    <p *ngIf="!isLoading && errorMessage" class="text-red-600">{{ errorMessage }}</p>
+  </div>
+</ng-template>
