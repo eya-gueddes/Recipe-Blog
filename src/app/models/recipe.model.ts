@@ -3,8 +3,9 @@ export interface Recipe {
   title: string;
   description: string;
   meal: MealType;
+  createdAt: string;
   ingredients: Ingredient[];
-  instructions: instruction[];
+  instructions: Instruction[];
   prepTime?: number; // in minutes
   cookTime?: number; // in minutes
   servings: number;
@@ -16,7 +17,7 @@ export interface Ingredient {
   quantity: string;
 }
 
-export interface instruction {
+export interface Instruction {
   step: number;
   description: string;
 }

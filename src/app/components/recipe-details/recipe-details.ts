@@ -6,6 +6,12 @@ import { RecipeService } from '../../services/recipe.service';
 @Component({
   selector: 'app-recipe-details',
   standalone: true,
+import { ActivatedRoute } from '@angular/router';
+import { RecipeService } from '../../services/recipe.service';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-recipe-details',
   imports: [CommonModule],
   templateUrl: './recipe-details.html',
   styleUrl: './recipe-details.css',
@@ -14,6 +20,9 @@ export class RecipeDetails implements OnInit{
    recipe?: Recipe;
   isLoading = true;
   errorMessage = '';
+export class RecipeDetails implements OnInit {
+
+  recipe!: Recipe; //loaded recipe
 
   constructor(
     private route: ActivatedRoute,
@@ -28,6 +37,13 @@ export class RecipeDetails implements OnInit{
       this.isLoading = false;
       return;
     }
+    if (id) {
+      this.recipeService.getRecipeById(id).subscribe((recipe) => {
+        this.recipe = recipe;
+      });
+    }
+
+  }
 
     this.recipeService.getRecipe(id).subscribe({
       next: (recipe) => {

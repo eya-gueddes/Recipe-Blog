@@ -281,6 +281,140 @@
       "cookTime": 25,
       "servings": 9,
       "imageUrl": "/assets/recipes/brownies.png"
+      "title": "Classic Pancakes",
+      "description": "Fluffy pancakes perfect for breakfast.",
+      "meal": "Breakfast",
+      "ingredients": [
+        { "name": "Flour", "quantity": "1 cup" },
+        { "name": "Milk", "quantity": "3/4 cup" },
+        { "name": "Egg", "quantity": "1" },
+        { "name": "Baking Powder", "quantity": "2 tsp" },
+        { "name": "Sugar", "quantity": "1 tbsp" }
+      ],
+      "instructions": [
+        { "step": 1, "description": "Mix dry ingredients together." },
+        { "step": 2, "description": "Add milk and egg, then whisk until smooth." },
+        { "step": 3, "description": "Heat a pan and cook pancakes until golden." }
+      ],
+      "prepTime": 10,
+      "cookTime": 15,
+      "servings": 4,
+      "imageUrl": "https://example.com/pancakes.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Spaghetti Bolognese",
+      "description": "Classic Italian pasta with rich meat sauce.",
+      "meal": "Dinner",
+      "ingredients": [
+        { "name": "Spaghetti", "quantity": "400g" },
+        { "name": "Ground Beef", "quantity": "500g" },
+        { "name": "Onion", "quantity": "1" },
+        { "name": "Tomato Sauce", "quantity": "2 cups" },
+        { "name": "Olive Oil", "quantity": "2 tbsp" },
+        { "name": "Garlic", "quantity": "2 cloves" }
+      ],
+      "instructions": [
+        { "step": 1, "description": "Cook spaghetti according to package instructions." },
+        { "step": 2, "description": "Sauté onion and garlic in olive oil." },
+        { "step": 3, "description": "Add ground beef and cook until browned." },
+        { "step": 4, "description": "Add tomato sauce and simmer for 20 minutes." },
+        { "step": 5, "description": "Serve sauce over spaghetti." }
+      ],
+      "prepTime": 15,
+      "cookTime": 30,
+      "servings": 4,
+      "imageUrl": "https://example.com/spaghetti.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Chocolate Chip Cookies",
+      "description": "Chewy and delicious chocolate chip cookies.",
+      "meal": "Snack",
+      "ingredients": [
+        { "name": "Flour", "quantity": "2 1/4 cups" },
+        { "name": "Butter", "quantity": "1 cup" },
+        { "name": "Sugar", "quantity": "3/4 cup" },
+        { "name": "Brown Sugar", "quantity": "3/4 cup" },
+        { "name": "Eggs", "quantity": "2" },
+        { "name": "Chocolate Chips", "quantity": "2 cups" }
+      ],
+      "instructions": [
+        { "step": 1, "description": "Preheat oven to 350°F (175°C)." },
+        { "step": 2, "description": "Cream butter and sugars together." },
+        { "step": 3, "description": "Add eggs and vanilla, mix well." },
+        { "step": 4, "description": "Stir in flour and chocolate chips." },
+        { "step": 5, "description": "Drop spoonfuls on baking sheet and bake 10-12 minutes." }
+      ],
+      "prepTime": 15,
+      "cookTime": 12,
+      "servings": 24,
+      "imageUrl": "https://example.com/cookies.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Brik à l'œuf",
+      "description": "Thin pastry filled with egg, tuna, and parsley, then fried.",
+      "meal": "Snack",
+      "ingredients": [
+        { "name": "Brick pastry", "quantity": "2 sheets" },
+        { "name": "Egg", "quantity": "1" },
+        { "name": "Tuna", "quantity": "50g" },
+        { "name": "Parsley", "quantity": "1 tbsp" }
+      ],
+      "instructions": [
+        { "step": 1, "description": "Place tuna and parsley on the brick." },
+        { "step": 2, "description": "Crack an egg on top." },
+        { "step": 3, "description": "Fold and fry until golden." }
+      ],
+      "prepTime": 10,
+      "cookTime": 5,
+      "servings": 1,
+      "imageUrl": "assets/images/brik.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Couscous tunisien",
+      "description": "Traditional Tunisian couscous with vegetables and meat.",
+      "meal": "Dinner",
+      "ingredients": [
+        { "name": "Couscous", "quantity": "300g" },
+        { "name": "Lamb or chicken", "quantity": "500g" },
+        { "name": "Carrots", "quantity": "2" },
+        { "name": "Zucchini", "quantity": "1" },
+        { "name": "Chickpeas", "quantity": "100g" }
+      ],
+      "instructions": [
+        { "step": 1, "description": "Cook meat with spices in a pot." },
+        { "step": 2, "description": "Add vegetables and chickpeas." },
+        { "step": 3, "description": "Steam couscous separately and serve with sauce." }
+      ],
+      "prepTime": 20,
+      "cookTime": 60,
+      "servings": 4,
+      "imageUrl": "assets/images/couscous.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Lablabi",
+      "description": "Tunisian chickpea soup with cumin and harissa.",
+      "meal": "Lunch",
+      "ingredients": [
+        { "name": "Chickpeas", "quantity": "250g" },
+        { "name": "Garlic", "quantity": "2 cloves" },
+        { "name": "Cumin", "quantity": "1 tsp" },
+        { "name": "Bread", "quantity": "1 piece" },
+        { "name": "Olive oil", "quantity": "2 tbsp" }
+      ],
+      "instructions": [
+        { "step": 1, "description": "Cook chickpeas until tender." },
+        { "step": 2, "description": "Add garlic, cumin, and olive oil." },
+        { "step": 3, "description": "Serve hot with pieces of bread." }
+      ],
+      "prepTime": 10,
+      "cookTime": 40,
+      "servings": 2,
+      "imageUrl": "assets/images/lablabi.jpg"
     }
   ]
 }
