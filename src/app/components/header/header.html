@@ -1,0 +1,40 @@
+<header
+  class="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-gray-200"
+>
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- Logo / title -->
+    <button
+      routerLink="/"
+      class="flex items-center gap-2 group"
+    >
+      <span
+        class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-orange-500 text-white font-bold text-lg"
+      >
+        R
+      </span>
+      <span class="text-xl font-semibold tracking-tight group-hover:text-orange-600 transition">
+        Recipe Blog
+      </span>
+    </button>
+
+    <!-- Nav links -->
+    <nav class="flex items-center gap-6 text-sm font-medium">
+      <a
+        routerLink="/"
+        routerLinkActive="text-orange-600"
+        class="text-gray-600 hover:text-orange-500 transition"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home
+      </a>
+
+      <a
+        routerLink="/recipes"
+        routerLinkActive="text-orange-600"
+        class="text-gray-600 hover:text-orange-500 transition"
+      >
+        Recipes
+      </a>
+    </nav>
+  </div>
+</header>

@@ -1,4 +1,5 @@
-<div class="p-6" *ngIf="!isLoading && recipe; else loadingOrError">
+<div *ngIf="recipe" class="max-w-3xl mx-auto mt-8 p-6 bg-white shadow-lg rounded-xl">
+
   <button
     routerLink="/recipes"
     class="mb-4 text-sm text-blue-600 hover:underline"
@@ -6,51 +7,17 @@
     ← Back to recipes
   </button>
 
-  <div class="max-w-3xl mx-auto bg-white rounded-lg shadow p-6">
-    <img
-      [src]="recipe.imageUrl"
-      [alt]="recipe.title"
-      class="w-full max-h-72 object-cover rounded mb-4"
-    />
-
-    <h1 class="text-3xl font-bold mb-2">{{ recipe.title }}</h1>
-
-    <p class="text-gray-600 mb-4">
-      {{ recipe.meal }} • Serves {{ recipe.servings }}
-      <span *ngIf="recipe.prepTime"> • Prep: {{ recipe.prepTime }} min</span>
-      <span *ngIf="recipe.cookTime"> • Cook: {{ recipe.cookTime }} min</span>
-    </p>
-
-    <h2 class="text-xl font-semibold mb-2">Ingredients</h2>
-    <ul class="list-disc list-inside mb-4">
-      <li *ngFor="let ing of recipe.ingredients">
-        {{ ing.quantity }} {{ ing.name }}
-      </li>
-    </ul>
-
-    <h2 class="text-xl font-semibold mb-2">Instructions</h2>
-    <ol class="list-decimal list-inside space-y-1">
-      <li *ngFor="let step of recipe.instructions">
-        {{ step.description }}
-      </li>
-    </ol>
-  </div>
-</div>
-
-<ng-template #loadingOrError>
-  <div class="p-6">
-    <p *ngIf="isLoading">Loading recipe...</p>
-    <p *ngIf="!isLoading && errorMessage" class="text-red-600">{{ errorMessage }}</p>
-  </div>
-</ng-template>
-<div *ngIf="recipe" class="max-w-3xl mx-auto mt-8 p-6 bg-white shadow-lg rounded-xl">
-
-  <img *ngIf="recipe.imageUrl" [src]="recipe.imageUrl" class="w-full h-64 object-cover rounded-xl mb-4" />
+  <img
+    *ngIf="recipe.imageUrl"
+    [src]="recipe.imageUrl"
+    [alt]="recipe.title"
+    class="w-full h-64 object-cover rounded-xl mb-4"
+  />
 
   <h1 class="text-3xl font-bold mb-2">{{ recipe.title }}</h1>
   <p class="text-gray-600 italic mb-4">{{ recipe.description }}</p>
 
-  <div class="flex gap-4 text-sm text-gray-500 mb-6">
+  <div class="flex flex-wrap gap-4 text-sm text-gray-500 mb-6">
     <span>🍽 Meal: <strong>{{ recipe.meal }}</strong></span>
     <span>⏱ Prep: {{ recipe.prepTime || 0 }} min</span>
     <span>🔥 Cook: {{ recipe.cookTime || 0 }} min</span>
@@ -69,6 +36,4 @@
     <li *ngFor="let step of recipe.instructions">{{ step.description }}</li>
   </ol>
 
-
 </div>
-

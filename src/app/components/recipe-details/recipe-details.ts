@@ -12,7 +12,7 @@ import { RecipeService } from '../../services/recipe.service';
 })
 export class RecipeDetails implements OnInit{
 
-  recipe?: Recipe; //loaded recipe
+  recipe?: Recipe; 
   isLoading = true;
   errorMessage = '';
 
