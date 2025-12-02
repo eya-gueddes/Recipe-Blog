@@ -6,23 +6,68 @@
       "description": "Classic Italian pasta with a rich meat and tomato sauce.",
       "meal": "Dinner",
       "ingredients": [
-        { "name": "Spaghetti", "quantity": "200g" },
-        { "name": "Minced beef", "quantity": "200g" },
-        { "name": "Onion", "quantity": "1" },
-        { "name": "Garlic cloves", "quantity": "2" },
-        { "name": "Canned tomatoes", "quantity": "400g" },
-        { "name": "Olive oil", "quantity": "2 tbsp" },
-        { "name": "Salt", "quantity": "to taste" },
-        { "name": "Black pepper", "quantity": "to taste" },
-        { "name": "Dried oregano", "quantity": "to taste" }
+        {
+          "name": "Spaghetti",
+          "quantity": "200g"
+        },
+        {
+          "name": "Minced beef",
+          "quantity": "200g"
+        },
+        {
+          "name": "Onion",
+          "quantity": "1"
+        },
+        {
+          "name": "Garlic cloves",
+          "quantity": "2"
+        },
+        {
+          "name": "Canned tomatoes",
+          "quantity": "400g"
+        },
+        {
+          "name": "Olive oil",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Black pepper",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Dried oregano",
+          "quantity": "to taste"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Cook the spaghetti according to package instructions." },
-        { "step": 2, "description": "Heat olive oil in a pan, sauté chopped onion and garlic until soft." },
-        { "step": 3, "description": "Add minced beef and cook until browned." },
-        { "step": 4, "description": "Pour in canned tomatoes, season with salt, pepper and oregano." },
-        { "step": 5, "description": "Simmer for 15–20 minutes." },
-        { "step": 6, "description": "Serve sauce over spaghetti." }
+        {
+          "step": 1,
+          "description": "Cook the spaghetti according to package instructions."
+        },
+        {
+          "step": 2,
+          "description": "Heat olive oil in a pan, sauté chopped onion and garlic until soft."
+        },
+        {
+          "step": 3,
+          "description": "Add minced beef and cook until browned."
+        },
+        {
+          "step": 4,
+          "description": "Pour in canned tomatoes, season with salt, pepper and oregano."
+        },
+        {
+          "step": 5,
+          "description": "Simmer for 15–20 minutes."
+        },
+        {
+          "step": 6,
+          "description": "Serve sauce over spaghetti."
+        }
       ],
       "prepTime": 15,
       "cookTime": 25,
@@ -35,21 +80,60 @@
       "description": "Crispy romaine lettuce with grilled chicken and creamy Caesar dressing.",
       "meal": "Lunch",
       "ingredients": [
-        { "name": "Romaine lettuce", "quantity": "1 head" },
-        { "name": "Chicken breast", "quantity": "1" },
-        { "name": "Croutons", "quantity": "to taste" },
-        { "name": "Parmesan cheese", "quantity": "to taste" },
-        { "name": "Caesar dressing", "quantity": "to taste" },
-        { "name": "Salt", "quantity": "to taste" },
-        { "name": "Black pepper", "quantity": "to taste" },
-        { "name": "Olive oil", "quantity": "1–2 tbsp" }
+        {
+          "name": "Romaine lettuce",
+          "quantity": "1 head"
+        },
+        {
+          "name": "Chicken breast",
+          "quantity": "1"
+        },
+        {
+          "name": "Croutons",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Parmesan cheese",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Caesar dressing",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Black pepper",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Olive oil",
+          "quantity": "1–2 tbsp"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Season chicken breast with salt and pepper, then grill or pan-fry until cooked." },
-        { "step": 2, "description": "Chop romaine lettuce and place in a large bowl." },
-        { "step": 3, "description": "Slice the chicken and add to the lettuce." },
-        { "step": 4, "description": "Add croutons and shaved Parmesan." },
-        { "step": 5, "description": "Drizzle with Caesar dressing and toss gently." }
+        {
+          "step": 1,
+          "description": "Season chicken breast with salt and pepper, then grill or pan-fry until cooked."
+        },
+        {
+          "step": 2,
+          "description": "Chop romaine lettuce and place in a large bowl."
+        },
+        {
+          "step": 3,
+          "description": "Slice the chicken and add to the lettuce."
+        },
+        {
+          "step": 4,
+          "description": "Add croutons and shaved Parmesan."
+        },
+        {
+          "step": 5,
+          "description": "Drizzle with Caesar dressing and toss gently."
+        }
       ],
       "prepTime": 15,
       "cookTime": 15,
@@ -62,23 +146,68 @@
       "description": "Colorful mixed vegetables stir-fried in a light soy-garlic sauce.",
       "meal": "Dinner",
       "ingredients": [
-        { "name": "Red bell pepper", "quantity": "1" },
-        { "name": "Yellow bell pepper", "quantity": "1" },
-        { "name": "Carrot", "quantity": "1" },
-        { "name": "Broccoli florets", "quantity": "100g" },
-        { "name": "Onion", "quantity": "1" },
-        { "name": "Soy sauce", "quantity": "2 tbsp" },
-        { "name": "Sesame oil", "quantity": "1 tbsp" },
-        { "name": "Garlic cloves", "quantity": "2" },
-        { "name": "Grated ginger", "quantity": "1 tsp" }
+        {
+          "name": "Red bell pepper",
+          "quantity": "1"
+        },
+        {
+          "name": "Yellow bell pepper",
+          "quantity": "1"
+        },
+        {
+          "name": "Carrot",
+          "quantity": "1"
+        },
+        {
+          "name": "Broccoli florets",
+          "quantity": "100g"
+        },
+        {
+          "name": "Onion",
+          "quantity": "1"
+        },
+        {
+          "name": "Soy sauce",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Sesame oil",
+          "quantity": "1 tbsp"
+        },
+        {
+          "name": "Garlic cloves",
+          "quantity": "2"
+        },
+        {
+          "name": "Grated ginger",
+          "quantity": "1 tsp"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Chop all vegetables into bite-sized pieces." },
-        { "step": 2, "description": "Heat sesame oil in a wok or large pan." },
-        { "step": 3, "description": "Add garlic and ginger, stir for 30 seconds." },
-        { "step": 4, "description": "Add vegetables and stir-fry for 5–7 minutes." },
-        { "step": 5, "description": "Pour in soy sauce and cook for 1–2 more minutes." },
-        { "step": 6, "description": "Serve hot with rice or noodles." }
+        {
+          "step": 1,
+          "description": "Chop all vegetables into bite-sized pieces."
+        },
+        {
+          "step": 2,
+          "description": "Heat sesame oil in a wok or large pan."
+        },
+        {
+          "step": 3,
+          "description": "Add garlic and ginger, stir for 30 seconds."
+        },
+        {
+          "step": 4,
+          "description": "Add vegetables and stir-fry for 5–7 minutes."
+        },
+        {
+          "step": 5,
+          "description": "Pour in soy sauce and cook for 1–2 more minutes."
+        },
+        {
+          "step": 6,
+          "description": "Serve hot with rice or noodles."
+        }
       ],
       "prepTime": 15,
       "cookTime": 10,
@@ -91,20 +220,56 @@
       "description": "Soft tortillas filled with seasoned minced beef and fresh toppings.",
       "meal": "Dinner",
       "ingredients": [
-        { "name": "Minced beef", "quantity": "200g" },
-        { "name": "Taco seasoning", "quantity": "1 packet or to taste" },
-        { "name": "Tortillas", "quantity": "4 small" },
-        { "name": "Lettuce", "quantity": "shredded, to taste" },
-        { "name": "Tomato", "quantity": "diced, to taste" },
-        { "name": "Grated cheese", "quantity": "to taste" },
-        { "name": "Sour cream", "quantity": "to taste" }
+        {
+          "name": "Minced beef",
+          "quantity": "200g"
+        },
+        {
+          "name": "Taco seasoning",
+          "quantity": "1 packet or to taste"
+        },
+        {
+          "name": "Tortillas",
+          "quantity": "4 small"
+        },
+        {
+          "name": "Lettuce",
+          "quantity": "shredded, to taste"
+        },
+        {
+          "name": "Tomato",
+          "quantity": "diced, to taste"
+        },
+        {
+          "name": "Grated cheese",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Sour cream",
+          "quantity": "to taste"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Cook minced beef in a pan until browned." },
-        { "step": 2, "description": "Add taco seasoning and a little water, simmer for 5 minutes." },
-        { "step": 3, "description": "Warm tortillas in a pan or microwave." },
-        { "step": 4, "description": "Fill tortillas with beef, shredded lettuce, diced tomato and cheese." },
-        { "step": 5, "description": "Top with sour cream and serve." }
+        {
+          "step": 1,
+          "description": "Cook minced beef in a pan until browned."
+        },
+        {
+          "step": 2,
+          "description": "Add taco seasoning and a little water, simmer for 5 minutes."
+        },
+        {
+          "step": 3,
+          "description": "Warm tortillas in a pan or microwave."
+        },
+        {
+          "step": 4,
+          "description": "Fill tortillas with beef, shredded lettuce, diced tomato and cheese."
+        },
+        {
+          "step": 5,
+          "description": "Top with sour cream and serve."
+        }
       ],
       "prepTime": 10,
       "cookTime": 15,
@@ -117,21 +282,60 @@
       "description": "Simple pizza topped with tomato sauce, mozzarella and fresh basil.",
       "meal": "Dinner",
       "ingredients": [
-        { "name": "Pizza dough base", "quantity": "1" },
-        { "name": "Tomato sauce", "quantity": "100g" },
-        { "name": "Mozzarella cheese", "quantity": "150g" },
-        { "name": "Fresh basil leaves", "quantity": "a handful" },
-        { "name": "Olive oil", "quantity": "1–2 tbsp" },
-        { "name": "Salt", "quantity": "to taste" },
-        { "name": "Black pepper", "quantity": "to taste" }
+        {
+          "name": "Pizza dough base",
+          "quantity": "1"
+        },
+        {
+          "name": "Tomato sauce",
+          "quantity": "100g"
+        },
+        {
+          "name": "Mozzarella cheese",
+          "quantity": "150g"
+        },
+        {
+          "name": "Fresh basil leaves",
+          "quantity": "a handful"
+        },
+        {
+          "name": "Olive oil",
+          "quantity": "1–2 tbsp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Black pepper",
+          "quantity": "to taste"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Preheat oven to 220°C." },
-        { "step": 2, "description": "Spread tomato sauce over the pizza base." },
-        { "step": 3, "description": "Top with sliced or shredded mozzarella." },
-        { "step": 4, "description": "Season lightly with salt and pepper." },
-        { "step": 5, "description": "Bake for 10–12 minutes until crust is golden." },
-        { "step": 6, "description": "Top with fresh basil leaves and a drizzle of olive oil." }
+        {
+          "step": 1,
+          "description": "Preheat oven to 220°C."
+        },
+        {
+          "step": 2,
+          "description": "Spread tomato sauce over the pizza base."
+        },
+        {
+          "step": 3,
+          "description": "Top with sliced or shredded mozzarella."
+        },
+        {
+          "step": 4,
+          "description": "Season lightly with salt and pepper."
+        },
+        {
+          "step": 5,
+          "description": "Bake for 10–12 minutes until crust is golden."
+        },
+        {
+          "step": 6,
+          "description": "Top with fresh basil leaves and a drizzle of olive oil."
+        }
       ],
       "prepTime": 15,
       "cookTime": 12,
@@ -144,26 +348,80 @@
       "description": "Hearty and comforting soup made with red lentils and vegetables.",
       "meal": "Lunch",
       "ingredients": [
-        { "name": "Red lentils", "quantity": "200g" },
-        { "name": "Onion", "quantity": "1" },
-        { "name": "Carrots", "quantity": "2" },
-        { "name": "Celery stalks", "quantity": "2" },
-        { "name": "Tomato", "quantity": "1" },
-        { "name": "Vegetable broth", "quantity": "1.2L" },
-        { "name": "Olive oil", "quantity": "2 tbsp" },
-        { "name": "Salt", "quantity": "to taste" },
-        { "name": "Black pepper", "quantity": "to taste" },
-        { "name": "Ground cumin", "quantity": "to taste" }
+        {
+          "name": "Red lentils",
+          "quantity": "200g"
+        },
+        {
+          "name": "Onion",
+          "quantity": "1"
+        },
+        {
+          "name": "Carrots",
+          "quantity": "2"
+        },
+        {
+          "name": "Celery stalks",
+          "quantity": "2"
+        },
+        {
+          "name": "Tomato",
+          "quantity": "1"
+        },
+        {
+          "name": "Vegetable broth",
+          "quantity": "1.2L"
+        },
+        {
+          "name": "Olive oil",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Black pepper",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Ground cumin",
+          "quantity": "to taste"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Rinse lentils under cold water." },
-        { "step": 2, "description": "Chop onion, carrots, celery and tomato." },
-        { "step": 3, "description": "Heat olive oil in a pot and sauté onion until translucent." },
-        { "step": 4, "description": "Add carrots, celery and tomato, cook for a few minutes." },
-        { "step": 5, "description": "Add lentils and vegetable broth." },
-        { "step": 6, "description": "Season with salt, pepper and cumin." },
-        { "step": 7, "description": "Simmer for 25–30 minutes until lentils are soft." },
-        { "step": 8, "description": "Blend partially if you like a creamier texture." }
+        {
+          "step": 1,
+          "description": "Rinse lentils under cold water."
+        },
+        {
+          "step": 2,
+          "description": "Chop onion, carrots, celery and tomato."
+        },
+        {
+          "step": 3,
+          "description": "Heat olive oil in a pot and sauté onion until translucent."
+        },
+        {
+          "step": 4,
+          "description": "Add carrots, celery and tomato, cook for a few minutes."
+        },
+        {
+          "step": 5,
+          "description": "Add lentils and vegetable broth."
+        },
+        {
+          "step": 6,
+          "description": "Season with salt, pepper and cumin."
+        },
+        {
+          "step": 7,
+          "description": "Simmer for 25–30 minutes until lentils are soft."
+        },
+        {
+          "step": 8,
+          "description": "Blend partially if you like a creamier texture."
+        }
       ],
       "prepTime": 15,
       "cookTime": 30,
@@ -176,21 +434,60 @@
       "description": "Fluffy pancakes perfect for breakfast with syrup or fruit.",
       "meal": "Breakfast",
       "ingredients": [
-        { "name": "Flour", "quantity": "200g" },
-        { "name": "Sugar", "quantity": "2 tbsp" },
-        { "name": "Baking powder", "quantity": "2 tsp" },
-        { "name": "Salt", "quantity": "1 pinch" },
-        { "name": "Milk", "quantity": "250ml" },
-        { "name": "Egg", "quantity": "1" },
-        { "name": "Melted butter", "quantity": "2 tbsp" }
+        {
+          "name": "Flour",
+          "quantity": "200g"
+        },
+        {
+          "name": "Sugar",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Baking powder",
+          "quantity": "2 tsp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "1 pinch"
+        },
+        {
+          "name": "Milk",
+          "quantity": "250ml"
+        },
+        {
+          "name": "Egg",
+          "quantity": "1"
+        },
+        {
+          "name": "Melted butter",
+          "quantity": "2 tbsp"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "In a bowl, mix flour, sugar, baking powder and salt." },
-        { "step": 2, "description": "In another bowl, whisk milk, egg and melted butter." },
-        { "step": 3, "description": "Combine wet and dry ingredients and mix until just combined." },
-        { "step": 4, "description": "Heat a non-stick pan and pour small ladles of batter." },
-        { "step": 5, "description": "Cook until bubbles form, then flip and cook the other side." },
-        { "step": 6, "description": "Serve with maple syrup, honey or fresh fruit." }
+        {
+          "step": 1,
+          "description": "In a bowl, mix flour, sugar, baking powder and salt."
+        },
+        {
+          "step": 2,
+          "description": "In another bowl, whisk milk, egg and melted butter."
+        },
+        {
+          "step": 3,
+          "description": "Combine wet and dry ingredients and mix until just combined."
+        },
+        {
+          "step": 4,
+          "description": "Heat a non-stick pan and pour small ladles of batter."
+        },
+        {
+          "step": 5,
+          "description": "Cook until bubbles form, then flip and cook the other side."
+        },
+        {
+          "step": 6,
+          "description": "Serve with maple syrup, honey or fresh fruit."
+        }
       ],
       "prepTime": 10,
       "cookTime": 15,
@@ -203,25 +500,76 @@
       "description": "Creamy coconut chickpea curry with warm spices.",
       "meal": "Dinner",
       "ingredients": [
-        { "name": "Chickpeas", "quantity": "1 can" },
-        { "name": "Onion", "quantity": "1" },
-        { "name": "Garlic cloves", "quantity": "2" },
-        { "name": "Grated ginger", "quantity": "1 tsp" },
-        { "name": "Curry powder", "quantity": "2 tbsp" },
-        { "name": "Coconut milk", "quantity": "400ml" },
-        { "name": "Tomato", "quantity": "1" },
-        { "name": "Vegetable oil", "quantity": "2 tbsp" },
-        { "name": "Salt", "quantity": "to taste" }
+        {
+          "name": "Chickpeas",
+          "quantity": "1 can"
+        },
+        {
+          "name": "Onion",
+          "quantity": "1"
+        },
+        {
+          "name": "Garlic cloves",
+          "quantity": "2"
+        },
+        {
+          "name": "Grated ginger",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Curry powder",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Coconut milk",
+          "quantity": "400ml"
+        },
+        {
+          "name": "Tomato",
+          "quantity": "1"
+        },
+        {
+          "name": "Vegetable oil",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Drain and rinse chickpeas." },
-        { "step": 2, "description": "Chop onion and tomato, mince garlic." },
-        { "step": 3, "description": "Heat oil in a pan and sauté onion until soft." },
-        { "step": 4, "description": "Add garlic, ginger and curry powder, cook for 1 minute." },
-        { "step": 5, "description": "Add tomato and cook until softened." },
-        { "step": 6, "description": "Pour in coconut milk and add chickpeas." },
-        { "step": 7, "description": "Simmer for 15–20 minutes and season with salt." },
-        { "step": 8, "description": "Serve with rice or flatbread." }
+        {
+          "step": 1,
+          "description": "Drain and rinse chickpeas."
+        },
+        {
+          "step": 2,
+          "description": "Chop onion and tomato, mince garlic."
+        },
+        {
+          "step": 3,
+          "description": "Heat oil in a pan and sauté onion until soft."
+        },
+        {
+          "step": 4,
+          "description": "Add garlic, ginger and curry powder, cook for 1 minute."
+        },
+        {
+          "step": 5,
+          "description": "Add tomato and cook until softened."
+        },
+        {
+          "step": 6,
+          "description": "Pour in coconut milk and add chickpeas."
+        },
+        {
+          "step": 7,
+          "description": "Simmer for 15–20 minutes and season with salt."
+        },
+        {
+          "step": 8,
+          "description": "Serve with rice or flatbread."
+        }
       ],
       "prepTime": 15,
       "cookTime": 20,
@@ -234,21 +582,60 @@
       "description": "Juicy shrimp cooked quickly in a garlic butter sauce.",
       "meal": "Dinner",
       "ingredients": [
-        { "name": "Shrimp, peeled", "quantity": "200g" },
-        { "name": "Butter", "quantity": "3 tbsp" },
-        { "name": "Garlic cloves", "quantity": "3" },
-        { "name": "Lemon", "quantity": "1/2" },
-        { "name": "Fresh parsley", "quantity": "a handful" },
-        { "name": "Salt", "quantity": "to taste" },
-        { "name": "Black pepper", "quantity": "to taste" }
+        {
+          "name": "Shrimp, peeled",
+          "quantity": "200g"
+        },
+        {
+          "name": "Butter",
+          "quantity": "3 tbsp"
+        },
+        {
+          "name": "Garlic cloves",
+          "quantity": "3"
+        },
+        {
+          "name": "Lemon",
+          "quantity": "1/2"
+        },
+        {
+          "name": "Fresh parsley",
+          "quantity": "a handful"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Black pepper",
+          "quantity": "to taste"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Season shrimp with salt and pepper." },
-        { "step": 2, "description": "Melt butter in a pan over medium heat." },
-        { "step": 3, "description": "Add minced garlic and cook for 30 seconds." },
-        { "step": 4, "description": "Add shrimp and cook 2–3 minutes per side until pink." },
-        { "step": 5, "description": "Squeeze lemon juice over the shrimp." },
-        { "step": 6, "description": "Garnish with chopped parsley and serve." }
+        {
+          "step": 1,
+          "description": "Season shrimp with salt and pepper."
+        },
+        {
+          "step": 2,
+          "description": "Melt butter in a pan over medium heat."
+        },
+        {
+          "step": 3,
+          "description": "Add minced garlic and cook for 30 seconds."
+        },
+        {
+          "step": 4,
+          "description": "Add shrimp and cook 2–3 minutes per side until pink."
+        },
+        {
+          "step": 5,
+          "description": "Squeeze lemon juice over the shrimp."
+        },
+        {
+          "step": 6,
+          "description": "Garnish with chopped parsley and serve."
+        }
       ],
       "prepTime": 10,
       "cookTime": 10,
@@ -261,21 +648,60 @@
       "description": "Rich and fudgy chocolate brownies.",
       "meal": "Dessert",
       "ingredients": [
-        { "name": "Dark chocolate", "quantity": "150g" },
-        { "name": "Butter", "quantity": "100g" },
-        { "name": "Sugar", "quantity": "150g" },
-        { "name": "Eggs", "quantity": "2" },
-        { "name": "Flour", "quantity": "80g" },
-        { "name": "Cocoa powder", "quantity": "2 tbsp" },
-        { "name": "Salt", "quantity": "1 pinch" }
+        {
+          "name": "Dark chocolate",
+          "quantity": "150g"
+        },
+        {
+          "name": "Butter",
+          "quantity": "100g"
+        },
+        {
+          "name": "Sugar",
+          "quantity": "150g"
+        },
+        {
+          "name": "Eggs",
+          "quantity": "2"
+        },
+        {
+          "name": "Flour",
+          "quantity": "80g"
+        },
+        {
+          "name": "Cocoa powder",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "1 pinch"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Preheat oven to 180°C and line a baking tin with parchment paper." },
-        { "step": 2, "description": "Melt chocolate and butter together." },
-        { "step": 3, "description": "Whisk in sugar, then add eggs one at a time." },
-        { "step": 4, "description": "Mix in flour, cocoa powder and salt until combined." },
-        { "step": 5, "description": "Pour batter into the tin and spread evenly." },
-        { "step": 6, "description": "Bake for 20–25 minutes, then let cool before cutting." }
+        {
+          "step": 1,
+          "description": "Preheat oven to 180°C and line a baking tin with parchment paper."
+        },
+        {
+          "step": 2,
+          "description": "Melt chocolate and butter together."
+        },
+        {
+          "step": 3,
+          "description": "Whisk in sugar, then add eggs one at a time."
+        },
+        {
+          "step": 4,
+          "description": "Mix in flour, cocoa powder and salt until combined."
+        },
+        {
+          "step": 5,
+          "description": "Pour batter into the tin and spread evenly."
+        },
+        {
+          "step": 6,
+          "description": "Bake for 20–25 minutes, then let cool before cutting."
+        }
       ],
       "prepTime": 15,
       "cookTime": 25,
@@ -283,141 +709,306 @@
       "imageUrl": "/assets/recipes/brownies.png"
     },
     {
-      "id": "11",
-      "title": "Classic Pancakes",
-      "description": "Fluffy pancakes perfect for breakfast.",
-      "meal": "Breakfast",
-      "ingredients": [
-        { "name": "Flour", "quantity": "1 cup" },
-        { "name": "Milk", "quantity": "3/4 cup" },
-        { "name": "Egg", "quantity": "1" },
-        { "name": "Baking Powder", "quantity": "2 tsp" },
-        { "name": "Sugar", "quantity": "1 tbsp" }
-      ],
-      "instructions": [
-        { "step": 1, "description": "Mix dry ingredients together." },
-        { "step": 2, "description": "Add milk and egg, then whisk until smooth." },
-        { "step": 3, "description": "Heat a pan and cook pancakes until golden." }
-      ],
-      "prepTime": 10,
-      "cookTime": 15,
-      "servings": 4,
-      "imageUrl": "https://example.com/pancakes.jpg"
-    },
-    {
-      "id": "2",
-      "title": "Spaghetti Bolognese",
-      "description": "Classic Italian pasta with rich meat sauce.",
-      "meal": "Dinner",
-      "ingredients": [
-        { "name": "Spaghetti", "quantity": "400g" },
-        { "name": "Ground Beef", "quantity": "500g" },
-        { "name": "Onion", "quantity": "1" },
-        { "name": "Tomato Sauce", "quantity": "2 cups" },
-        { "name": "Olive Oil", "quantity": "2 tbsp" },
-        { "name": "Garlic", "quantity": "2 cloves" }
-      ],
-      "instructions": [
-        { "step": 1, "description": "Cook spaghetti according to package instructions." },
-        { "step": 2, "description": "Sauté onion and garlic in olive oil." },
-        { "step": 3, "description": "Add ground beef and cook until browned." },
-        { "step": 4, "description": "Add tomato sauce and simmer for 20 minutes." },
-        { "step": 5, "description": "Serve sauce over spaghetti." }
-      ],
-      "prepTime": 15,
-      "cookTime": 30,
-      "servings": 4,
-      "imageUrl": "https://example.com/spaghetti.jpg"
-    },
-    {
-      "id": "3",
+      "id": "12",
       "title": "Chocolate Chip Cookies",
       "description": "Chewy and delicious chocolate chip cookies.",
       "meal": "Snack",
       "ingredients": [
-        { "name": "Flour", "quantity": "2 1/4 cups" },
-        { "name": "Butter", "quantity": "1 cup" },
-        { "name": "Sugar", "quantity": "3/4 cup" },
-        { "name": "Brown Sugar", "quantity": "3/4 cup" },
-        { "name": "Eggs", "quantity": "2" },
-        { "name": "Chocolate Chips", "quantity": "2 cups" }
+        {
+          "name": "Flour",
+          "quantity": "2 1/4 cups"
+        },
+        {
+          "name": "Butter",
+          "quantity": "1 cup, softened"
+        },
+        {
+          "name": "Sugar",
+          "quantity": "3/4 cup"
+        },
+        {
+          "name": "Brown sugar",
+          "quantity": "3/4 cup"
+        },
+        {
+          "name": "Eggs",
+          "quantity": "2"
+        },
+        {
+          "name": "Vanilla extract",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Baking soda",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "name": "Chocolate chips",
+          "quantity": "2 cups"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Preheat oven to 350°F (175°C)." },
-        { "step": 2, "description": "Cream butter and sugars together." },
-        { "step": 3, "description": "Add eggs and vanilla, mix well." },
-        { "step": 4, "description": "Stir in flour and chocolate chips." },
-        { "step": 5, "description": "Drop spoonfuls on baking sheet and bake 10-12 minutes." }
+        {
+          "step": 1,
+          "description": "Preheat oven to 350°F (175°C)."
+        },
+        {
+          "step": 2,
+          "description": "Cream butter, sugar and brown sugar together until light and fluffy."
+        },
+        {
+          "step": 3,
+          "description": "Beat in eggs one at a time, then add vanilla."
+        },
+        {
+          "step": 4,
+          "description": "Stir in flour, baking soda and salt, then fold in chocolate chips."
+        },
+        {
+          "step": 5,
+          "description": "Drop spoonfuls of dough onto a baking sheet and bake 10–12 minutes until golden at the edges."
+        }
       ],
       "prepTime": 15,
       "cookTime": 12,
       "servings": 24,
-      "imageUrl": "https://example.com/cookies.jpg"
+      "imageUrl": "/assets/recipes/cookie.png"
     },
     {
-      "id": "4",
+      "id": "13",
       "title": "Brik à l'œuf",
-      "description": "Thin pastry filled with egg, tuna, and parsley, then fried.",
+      "description": "Thin pastry filled with egg, tuna and parsley, then fried until crispy.",
       "meal": "Snack",
       "ingredients": [
-        { "name": "Brick pastry", "quantity": "2 sheets" },
-        { "name": "Egg", "quantity": "1" },
-        { "name": "Tuna", "quantity": "50g" },
-        { "name": "Parsley", "quantity": "1 tbsp" }
+        {
+          "name": "Brick pastry sheets",
+          "quantity": "2"
+        },
+        {
+          "name": "Egg",
+          "quantity": "1"
+        },
+        {
+          "name": "Canned tuna",
+          "quantity": "50g, drained"
+        },
+        {
+          "name": "Parsley",
+          "quantity": "1 tbsp, chopped"
+        },
+        {
+          "name": "Salt",
+          "quantity": "a pinch"
+        },
+        {
+          "name": "Black pepper",
+          "quantity": "a pinch"
+        },
+        {
+          "name": "Oil for frying",
+          "quantity": "as needed"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Place tuna and parsley on the brick." },
-        { "step": 2, "description": "Crack an egg on top." },
-        { "step": 3, "description": "Fold and fry until golden." }
+        {
+          "step": 1,
+          "description": "Lay one brick sheet flat and place tuna and parsley in the center."
+        },
+        {
+          "step": 2,
+          "description": "Season with salt and pepper, then gently crack an egg on top of the filling."
+        },
+        {
+          "step": 3,
+          "description": "Fold the pastry over to enclose the filling, sealing the edges."
+        },
+        {
+          "step": 4,
+          "description": "Fry in hot oil until the brik is golden and crispy on both sides."
+        }
       ],
       "prepTime": 10,
       "cookTime": 5,
       "servings": 1,
-      "imageUrl": "assets/images/brik.jpg"
+      "imageUrl": "/assets/recipes/brik.png"
     },
     {
-      "id": "5",
+      "id": "14",
       "title": "Couscous tunisien",
       "description": "Traditional Tunisian couscous with vegetables and meat.",
       "meal": "Dinner",
       "ingredients": [
-        { "name": "Couscous", "quantity": "300g" },
-        { "name": "Lamb or chicken", "quantity": "500g" },
-        { "name": "Carrots", "quantity": "2" },
-        { "name": "Zucchini", "quantity": "1" },
-        { "name": "Chickpeas", "quantity": "100g" }
+        {
+          "name": "Couscous",
+          "quantity": "300g"
+        },
+        {
+          "name": "Lamb or chicken pieces",
+          "quantity": "500g"
+        },
+        {
+          "name": "Carrots",
+          "quantity": "2, sliced"
+        },
+        {
+          "name": "Zucchini",
+          "quantity": "1, sliced"
+        },
+        {
+          "name": "Potato",
+          "quantity": "1, cut into chunks"
+        },
+        {
+          "name": "Chickpeas",
+          "quantity": "100g, cooked"
+        },
+        {
+          "name": "Tomato paste",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Harissa",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Couscous spice / ras el hanout",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Olive oil",
+          "quantity": "2 tbsp"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Cook meat with spices in a pot." },
-        { "step": 2, "description": "Add vegetables and chickpeas." },
-        { "step": 3, "description": "Steam couscous separately and serve with sauce." }
+        {
+          "step": 1,
+          "description": "Heat olive oil in a pot and brown the meat."
+        },
+        {
+          "step": 2,
+          "description": "Add tomato paste, harissa and spices, stir briefly, then add water to cover the meat."
+        },
+        {
+          "step": 3,
+          "description": "Add carrots, potato and chickpeas, and simmer until meat is almost tender."
+        },
+        {
+          "step": 4,
+          "description": "Add zucchini and continue cooking until vegetables and meat are fully cooked."
+        },
+        {
+          "step": 5,
+          "description": "Meanwhile, steam the couscous with a little salted water or broth."
+        },
+        {
+          "step": 6,
+          "description": "Serve the couscous in a dish and pour the sauce, meat and vegetables over the top."
+        }
       ],
       "prepTime": 20,
       "cookTime": 60,
       "servings": 4,
-      "imageUrl": "assets/images/couscous.jpg"
+      "imageUrl": "/assets/recipes/couscous.png"
     },
     {
-      "id": "6",
+      "id": "15",
       "title": "Lablabi",
-      "description": "Tunisian chickpea soup with cumin and harissa.",
+      "description": "Tunisian chickpea soup with cumin, garlic and harissa, served over bread.",
       "meal": "Lunch",
       "ingredients": [
-        { "name": "Chickpeas", "quantity": "250g" },
-        { "name": "Garlic", "quantity": "2 cloves" },
-        { "name": "Cumin", "quantity": "1 tsp" },
-        { "name": "Bread", "quantity": "1 piece" },
-        { "name": "Olive oil", "quantity": "2 tbsp" }
+        {
+          "name": "Dried chickpeas",
+          "quantity": "250g, soaked overnight"
+        },
+        {
+          "name": "Garlic",
+          "quantity": "3 cloves, minced"
+        },
+        {
+          "name": "Cumin",
+          "quantity": "1 tsp"
+        },
+        {
+          "name": "Harissa",
+          "quantity": "1–2 tsp"
+        },
+        {
+          "name": "Stale bread",
+          "quantity": "2 slices, torn into pieces"
+        },
+        {
+          "name": "Olive oil",
+          "quantity": "2 tbsp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "to taste"
+        },
+        {
+          "name": "Lemon wedges",
+          "quantity": "to serve"
+        }
       ],
       "instructions": [
-        { "step": 1, "description": "Cook chickpeas until tender." },
-        { "step": 2, "description": "Add garlic, cumin, and olive oil." },
-        { "step": 3, "description": "Serve hot with pieces of bread." }
+        {
+          "step": 1,
+          "description": "Cook soaked chickpeas in water until very tender."
+        },
+        {
+          "step": 2,
+          "description": "Add garlic, cumin, salt and a little harissa to the pot and simmer a few more minutes."
+        },
+        {
+          "step": 3,
+          "description": "Place bread pieces in a bowl and pour hot chickpeas and broth over them."
+        },
+        {
+          "step": 4,
+          "description": "Drizzle with olive oil, adjust harissa to taste and serve with lemon wedges."
+        }
       ],
       "prepTime": 10,
       "cookTime": 40,
       "servings": 2,
-      "imageUrl": "assets/images/lablabi.jpg"
+      "imageUrl": "/assets/recipes/lablabi.png"
+    },
+    {
+      "id": "4b0b",
+      "title": "fries",
+      "description": "fried potato",
+      "meal": "Snack",
+      "prepTime": 15,
+      "cookTime": 7,
+      "servings": 2,
+      "imageUrl": "",
+      "ingredients": [
+        {
+          "name": "potato",
+          "quantity": "2"
+        },
+        {
+          "name": "oil",
+          "quantity": "1l"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "description": "peel"
+        },
+        {
+          "step": 2,
+          "description": "cut"
+        },
+        {
+          "step": 3,
+          "description": "fry"
+        }
+      ]
     }
   ]
 }
