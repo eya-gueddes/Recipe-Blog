@@ -1,28 +1,88 @@
 <div class="p-4">
 
-<div class="text-center my-10">
-  <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">
-    Recipe Collection
-  </h1>
-  <p class="text-gray-600 mt-2 text-lg">
-    Discover delicious meals you can make today
-  </p>
-</div>
+  <!-- Page header -->
+  <div class="text-center my-10">
+    <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">
+      Recipe Collection
+    </h1>
+    <p class="text-gray-600 mt-2 text-lg">
+      Discover delicious meals you can make today
+    </p>
+  </div>
 
+  <div class="p-6 max-w-5xl mx-auto">
 
-  <!-- If nothing loaded yet -->
-  <p *ngIf="!recipes.length" class="text-gray-500">
-    Loading recipes or no recipes found...
-  </p>
+    <!-- FILTER FORM -->
+    <form
+      [formGroup]="filterForm"
+      class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6"
+    >
+      <!-- Search by Title/Description -->
+      <div>
+        <label class="font-semibold block mb-1">Search</label>
+        <input
+          type="text"
+          formControlName="search"
+          placeholder="Search by recipe title..."
+          class="w-full border rounded-md p-2"
+        />
+      </div>
 
-  <!-- Recipes grid -->
-  <div 
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" 
-    *ngIf="recipes.length"
-  >
-    <app-recipe-card 
-      *ngFor="let recipe of recipes"
-      [recipe]="recipe">
-    </app-recipe-card>
+      <!-- Ingredients Filter -->
+      <div>
+        <label class="font-semibold block mb-1">Ingredients</label>
+        <input
+          type="text"
+          formControlName="ingredients"
+          placeholder="Ingredients (eggs, tomato, etc.)"
+          class="w-full border rounded-md p-2"
+        />
+      </div>
+
+      <!-- Meal Type -->
+      <div>
+        <label class="font-semibold block mb-1">Meal</label>
+        <select
+          formControlName="meal"
+          class="w-full border rounded-md p-2"
+        >
+          <option value="">All Meals</option>
+          <option *ngFor="let m of mealTypes" [value]="m">
+            {{ m }}
+          </option>
+        </select>
+      </div>
+    </form>
+
+    <!-- CLEAR BUTTON -->
+    <div class="mb-6">
+      <button
+        type="button"
+        (click)="clearFilter()"
+        class="border px-4 py-2 rounded-md bg-gray-200 hover:bg-gray-300 transition"
+      >
+        Clear Filters
+      </button>
+    </div>
+
+    <!-- Filtered recipes grid -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      *ngIf="filteredRecipes.length > 0; else noResults"
+    >
+      <app-recipe-card
+        *ngFor="let recipe of filteredRecipes"
+        [recipe]="recipe"
+      >
+      </app-recipe-card>
+    </div>
+
+    <!-- NO RESULTS BLOCK -->
+    <ng-template #noResults>
+      <p class="text-center text-gray-500 text-lg mt-10">
+        No recipes match your filters.
+      </p>
+    </ng-template>
+
   </div>
 </div>
