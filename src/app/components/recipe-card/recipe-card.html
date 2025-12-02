@@ -9,7 +9,14 @@
   />
 
   <h2 class="font-semibold text-lg">{{ recipe.title }}</h2>
-  <p class="text-sm text-gray-600">
-    {{ recipe.meal }} • Serves {{ recipe.servings }}
+
+  <p class="text-gray-700 text-sm">
+    {{ recipe.description | slice:0:100 }}
+    <span *ngIf="recipe.description.length > 100">...</span>
   </p>
+
+  <div class="flex items-center gap-2 mt-auto">
+    <span [mealColor]="recipe.meal">{{ recipe.meal }}</span>
+    <span class="text-sm text-gray-600">• Serves {{ recipe.servings }}</span>
+  </div>
 </a>

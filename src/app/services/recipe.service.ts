@@ -14,11 +14,13 @@ export class RecipeService {
   getRecipes():Observable<Recipe[]>{
     return this.http.get<Recipe[]>(this.baseUrl);
   }
+
   getRecipeById(id: string): Observable<Recipe> {
     const url = `${this.baseUrl}/${id}`;
     return this.http.get<Recipe>(url);
   }
-addRecipe(recipe: Omit<Recipe, 'id'>): Observable<Recipe> {
+
+  addRecipe(recipe: Omit<Recipe, 'id'>): Observable<Recipe> {
     return this.http.post<Recipe>(this.baseUrl, recipe);
   }
   updateRecipe(id: string, recipe: Omit<Recipe, 'id'>): Observable<Recipe> {

@@ -71,8 +71,8 @@
 
   <div class="flex flex-wrap gap-4 text-sm text-gray-500 mb-6">
     <span>🍽 Meal: <strong>{{ recipe.meal }}</strong></span>
-    <span>⏱ Prep: {{ recipe.prepTime || 0 }} min</span>
-    <span>🔥 Cook: {{ recipe.cookTime || 0 }} min</span>
+    <span>⏱ Prep: {{ recipe.prepTime | minutesToTime }} </span>
+    <span>🔥 Cook: {{ recipe.cookTime | minutesToTime }}</span>
     <span>👥 {{ recipe.servings }} servings</span>
   </div>
 
