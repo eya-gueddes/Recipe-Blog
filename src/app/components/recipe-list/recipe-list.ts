@@ -56,7 +56,7 @@ export class RecipeList implements OnInit {
   applyFilters(values: any): void {
     const search = this.normalize(values.search);
     const ingredients = values.ingredients || '';
-    const meal = values.meals || '';
+    const meal = values.meal || '';
 
     const ing = ingredients
       .split(',')
