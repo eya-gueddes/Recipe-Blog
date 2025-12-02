@@ -1,0 +1,296 @@
+<div class="min-h-screen bg-slate-50 py-10">
+  <div
+    class="max-w-4xl mx-auto bg-white border border-slate-100 shadow-xl rounded-2xl p-8 md:p-10"
+  >
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6">
+      <div>
+        <h1 class="text-2xl md:text-3xl font-bold text-slate-900">
+          Add a New Recipe
+        </h1>
+        <p class="text-sm text-slate-500 mt-1">
+          Share something delicious – fill in the details below 🍽️
+        </p>
+      </div>
+      <!-- Optional small badge -->
+      <span
+        class="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 border border-emerald-100"
+      >
+        Draft
+      </span>
+    </div>
+
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()" class="space-y-8">
+      <!-- BASIC INFO -->
+      <section class="space-y-4">
+        <h2 class="text-lg font-semibold text-slate-800 flex items-center gap-2">
+          <span
+            class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-blue-50 text-xs font-semibold text-blue-600"
+            >1</span
+          >
+          Basic information
+        </h2>
+
+        <div class="space-y-4">
+          <!-- Title -->
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1">
+              Title <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              formControlName="title"
+              class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              placeholder="e.g. Fluffy Pancakes"
+            />
+            <p
+              *ngIf="addForm.get('title')?.invalid && addForm.get('title')?.touched"
+              class="mt-1 text-xs text-red-500"
+            >
+              Title is required.
+            </p>
+          </div>
+
+          <!-- Description -->
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1">
+              Description
+            </label>
+            <textarea
+              rows="3"
+              formControlName="description"
+              class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              placeholder="Short description of your recipe..."
+            ></textarea>
+          </div>
+
+          <!-- Meal & image URL -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-slate-700 mb-1">
+                Meal type <span class="text-red-500">*</span>
+              </label>
+              <select
+                formControlName="meal"
+                class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm shadow-sm bg-white focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              >
+                <option value="" disabled selected>Choose a meal type</option>
+                <option>Breakfast</option>
+                <option>Lunch</option>
+                <option>Dinner</option>
+                <option>Snack</option>
+                <option>Dessert</option>
+              </select>
+              <p
+                *ngIf="addForm.get('meal')?.invalid && addForm.get('meal')?.touched"
+                class="mt-1 text-xs text-red-500"
+              >
+                Meal type is required.
+              </p>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-slate-700 mb-1">
+                Image URL
+              </label>
+              <input
+                type="text"
+                formControlName="imageUrl"
+                class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+                placeholder="/assets/recipes/pancakes.png"
+              />
+              <p class="mt-1 text-xs text-slate-400">
+                Optional – local asset path or an online image URL.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIMING & SERVINGS -->
+      <section class="space-y-4">
+        <h2 class="text-lg font-semibold text-slate-800 flex items-center gap-2">
+          <span
+            class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-blue-50 text-xs font-semibold text-blue-600"
+            >2</span
+          >
+          Timing & servings
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Prep time -->
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1">
+              Prep time (min)
+            </label>
+            <input
+              type="number"
+              formControlName="prepTime"
+              class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              min="0"
+            />
+          </div>
+
+          <!-- Cook time -->
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1">
+              Cook time (min)
+            </label>
+            <input
+              type="number"
+              formControlName="cookTime"
+              class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              min="0"
+            />
+          </div>
+
+          <!-- Servings -->
+          <div>
+            <label class="block text-sm font-medium text-slate-700 mb-1">
+              Servings
+            </label>
+            <input
+              type="number"
+              formControlName="servings"
+              class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+              min="1"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- INGREDIENTS -->
+      <section class="space-y-4">
+        <div class="flex items-center justify-between gap-2">
+          <h2
+            class="text-lg font-semibold text-slate-800 flex items-center gap-2"
+          >
+            <span
+              class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-blue-50 text-xs font-semibold text-blue-600"
+              >3</span
+            >
+            Ingredients
+          </h2>
+          <button
+            type="button"
+            (click)="addIngredient()"
+            class="inline-flex items-center rounded-full bg-slate-900 px-4 py-1.5 text-xs font-medium text-white shadow hover:bg-slate-800"
+          >
+            + Add ingredient
+          </button>
+        </div>
+
+        <div formArrayName="ingredients" class="space-y-3">
+          <p
+            *ngIf="ingredients.length === 0"
+            class="text-xs text-slate-400 italic"
+          >
+            No ingredients yet. Click “Add ingredient” to start.
+          </p>
+
+          <div
+            *ngFor="let ing of ingredients.controls; let i = index"
+            [formGroupName]="i"
+            class="grid grid-cols-12 gap-3 items-end bg-slate-50 border border-slate-100 rounded-xl px-3 py-3"
+          >
+            <div class="col-span-7">
+              <label class="block text-xs font-medium text-slate-700 mb-1">
+                Ingredient name
+              </label>
+              <input
+                type="text"
+                formControlName="name"
+                class="w-full rounded-lg border border-slate-200 px-3 py-2 text-xs shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+                placeholder="e.g. Flour"
+              />
+            </div>
+
+            <div class="col-span-4">
+              <label class="block text-xs font-medium text-slate-700 mb-1">
+                Quantity
+              </label>
+              <input
+                type="text"
+                formControlName="quantity"
+                class="w-full rounded-lg border border-slate-200 px-3 py-2 text-xs shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+                placeholder="e.g. 200g"
+              />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- INSTRUCTIONS -->
+      <section class="space-y-4">
+        <div class="flex items-center justify-between gap-2">
+          <h2
+            class="text-lg font-semibold text-slate-800 flex items-center gap-2"
+          >
+            <span
+              class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-blue-50 text-xs font-semibold text-blue-600"
+              >4</span
+            >
+            Instructions
+          </h2>
+          <button
+            type="button"
+            (click)="addInstruction()"
+            class="inline-flex items-center rounded-full bg-slate-900 px-4 py-1.5 text-xs font-medium text-white shadow hover:bg-slate-800"
+          >
+            + Add step
+          </button>
+        </div>
+
+        <div formArrayName="instructions" class="space-y-3">
+          <p
+            *ngIf="instructions.length === 0"
+            class="text-xs text-slate-400 italic"
+          >
+            No steps yet. Click “Add step” to describe how to prepare it.
+          </p>
+
+          <div
+            *ngFor="let step of instructions.controls; let i = index"
+            [formGroupName]="i"
+            class="flex gap-3 bg-slate-50 border border-slate-100 rounded-xl px-3 py-3"
+          >
+            <div class="pt-1">
+              <span
+                class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white text-xs font-semibold text-slate-700 border border-slate-200"
+              >
+                {{ i + 1 }}
+              </span>
+            </div>
+            <div class="flex-1">
+              <label class="block text-xs font-medium text-slate-700 mb-1">
+                Step description
+              </label>
+              <textarea
+                rows="2"
+                formControlName="description"
+                class="w-full rounded-lg border border-slate-200 px-3 py-2 text-xs shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+                placeholder="Describe this step..."
+              ></textarea>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- SUBMIT -->
+      <div class="pt-4 border-t border-slate-100 flex justify-end">
+  <button
+    type="button"
+    (click)="onSubmit()"
+    class="inline-flex items-center rounded-full px-6 py-2.5 text-sm font-semibold shadow-md
+           text-white
+           bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700"
+  >
+    Save recipe
+  </button>
+</div>
+
+    </form>
+  </div>
+</div>
