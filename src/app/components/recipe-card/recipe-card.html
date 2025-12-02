@@ -1,1 +1,15 @@
-<p>recipe-card works!</p>
+<a
+  class="border rounded-lg p-4 flex flex-col gap-3 hover:shadow-md transition h-full cursor-pointer no-underline text-inherit"
+  [routerLink]="['/recipes', recipe.id]"
+>
+<img
+    [src]="recipe.imageUrl"
+    [alt]="recipe.title"
+    class="w-full h-40 object-cover rounded"
+  />
+
+  <h2 class="font-semibold text-lg">{{ recipe.title }}</h2>
+  <p class="text-sm text-gray-600">
+    {{ recipe.meal }} • Serves {{ recipe.servings }}
+  </p>
+</a>
