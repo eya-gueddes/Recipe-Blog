@@ -1,11 +1,63 @@
 <div *ngIf="recipe" class="max-w-3xl mx-auto mt-8 p-6 bg-white shadow-lg rounded-xl">
 
-  <button
-    routerLink="/recipes"
-    class="mb-4 text-sm text-blue-600 hover:underline"
-  >
-    ← Back to recipes
-  </button>
+  <!-- 🔹 Top control bar (Back + Edit/Delete) -->
+  <div class="flex items-center justify-between mb-4">
+    
+    <!-- Back button -->
+    <button (click)="goBack()" class="inline-flex items-center gap-2 text-sm text-blue-600 hover:underline">
+      <svg xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-4 h-4">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+
+    <!-- Edit + Delete -->
+    <div class="flex gap-2">
+      
+      <!-- Edit -->
+      <button (click)="editRecipe(recipe.id)"
+              class="p-2 rounded-full hover:bg-blue-50 transition">
+        <svg xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 text-blue-600">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M16.862 3.487l3.651 3.651M4.5 20.25h15
+                  M9.75 15.75l-4.5 1.5 1.5-4.5 
+                  9.439-9.439a1.5 1.5 0 112.122 2.122L9.75 15.75z" />
+        </svg>
+      </button>
+
+      <!-- Delete -->
+      <button (click)="deleteRecipe(recipe.id)"
+              class="p-2 rounded-full hover:bg-red-50 transition">
+        <svg xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5 text-red-600">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M14.74 9l-.346 9m-4.788 0L9.26 9
+                  m9.968-3.21c.342.052.682.108 1.022.168
+                  M4.772 5.79c.34-.06.68-.116 1.022-.168
+                  m0 0L5.48 19.43A2.25 2.25 0 007.722 21.75h8.556
+                  A2.25 2.25 0 0018.52 19.43L18.206 5.79m-12.412 0
+                  A48.108 48.108 0 0112 5.25c2.138 0 4.254.156 6.318.54" />
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+
 
   <img
     *ngIf="recipe.imageUrl"

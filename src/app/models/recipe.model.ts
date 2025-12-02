@@ -6,8 +6,8 @@ export interface Recipe {
   createdAt: string;
   ingredients: Ingredient[];
   instructions: Instruction[];
-  prepTime?: number; // in minutes
-  cookTime?: number; // in minutes
+  prepTime?: number; 
+  cookTime?: number; 
   servings: number;
   imageUrl?: string;
 }

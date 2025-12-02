@@ -21,4 +21,12 @@ export class RecipeService {
 addRecipe(recipe: Omit<Recipe, 'id'>): Observable<Recipe> {
     return this.http.post<Recipe>(this.baseUrl, recipe);
   }
+  updateRecipe(id: string, recipe: Omit<Recipe, 'id'>): Observable<Recipe> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.put<Recipe>(url, recipe);
+  }
+  deleteRecipe(id: string): Observable<void> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<void>(url);
+  }
 }

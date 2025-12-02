@@ -975,40 +975,6 @@
       "cookTime": 40,
       "servings": 2,
       "imageUrl": "/assets/recipes/lablabi.png"
-    },
-    {
-      "id": "4b0b",
-      "title": "fries",
-      "description": "fried potato",
-      "meal": "Snack",
-      "prepTime": 15,
-      "cookTime": 7,
-      "servings": 2,
-      "imageUrl": "",
-      "ingredients": [
-        {
-          "name": "potato",
-          "quantity": "2"
-        },
-        {
-          "name": "oil",
-          "quantity": "1l"
-        }
-      ],
-      "instructions": [
-        {
-          "step": 1,
-          "description": "peel"
-        },
-        {
-          "step": 2,
-          "description": "cut"
-        },
-        {
-          "step": 3,
-          "description": "fry"
-        }
-      ]
     }
   ]
 }

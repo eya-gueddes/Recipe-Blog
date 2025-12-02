@@ -3,6 +3,7 @@ import { Recipe } from '../../models/recipe.model';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { RecipeService } from '../../services/recipe.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-recipe-details',
@@ -18,7 +19,8 @@ export class RecipeDetails implements OnInit{
 
   constructor(
     private route: ActivatedRoute,
-    private recipeService: RecipeService
+    private recipeService: RecipeService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -37,5 +39,17 @@ export class RecipeDetails implements OnInit{
 
   }
 
+  goBack(): void {
+    this.router.navigate(['/recipes']);
+  }
 
+  editRecipe(id: string): void {
+    this.router.navigate(['/recipes', id, 'edit']);
+  }
+
+  deleteRecipe(id: string): void {
+    this.recipeService.deleteRecipe(id).subscribe(() => {
+      this.router.navigate(['/recipes']);
+    });
+  }
 }
