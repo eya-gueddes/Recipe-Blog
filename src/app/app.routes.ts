@@ -11,4 +11,7 @@ export const routes: Routes = [
         path: 'recipes/:id',
         component: RecipeDetails,
     },
+    {
+        path: '', pathMatch: 'full', component: Home 
+    }
 ];
