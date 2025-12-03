@@ -54,16 +54,31 @@
       </div>
     </form>
 
-    <!-- CLEAR BUTTON -->
-    <div class="mb-6">
-      <button
-        type="button"
-        (click)="clearFilter()"
-        class="border px-4 py-2 rounded-md bg-gray-200 hover:bg-gray-300 transition"
-      >
-        Clear Filters
+    <!-- Buttons container aligned right -->
+    <div class="flex gap-3 justify-end mb-6">
+
+      <!-- Add Recipe Button (orange) -->
+      <button type="button" (click)="goToAddRecipe()"
+        class="flex items-center gap-1 px-3 py-1.5 bg-orange-500 text-white text-sm font-medium rounded-md hover:bg-orange-600 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-4 h-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+        </svg>
+        Add
       </button>
+
+      <!-- Clear Filters Button -->
+      <button type="button" (click)="clearFilter()"
+        class="flex items-center gap-1 px-3 py-1.5 border text-sm font-medium rounded-md bg-gray-200 hover:bg-gray-300 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-4 h-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+        Clear
+      </button>
+
     </div>
+
 
     <!-- Filtered recipes grid -->
     <div

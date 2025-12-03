@@ -50,6 +50,10 @@ export class RecipeDetails implements OnInit{
   }
 
   deleteRecipe(id: string): void {
+    const confirmed = confirm("Are you sure you want to delete this recipe?");
+
+    if (!confirmed) return;
+
     this.recipeService.deleteRecipe(id).subscribe(() => {
       this.router.navigate(['/recipes']);
     });
