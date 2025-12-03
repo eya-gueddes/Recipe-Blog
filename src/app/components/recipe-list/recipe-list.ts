@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { RecipeCard } from '../recipe-card/recipe-card';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { debounceTime } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-recipe-list',
@@ -22,7 +23,11 @@ export class RecipeList implements OnInit {
   filterForm!: FormGroup;
 
 
-  constructor(private recipeService: RecipeService, private fb: FormBuilder) {}
+  constructor(
+    private recipeService: RecipeService,
+    private fb: FormBuilder,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
     this.initForm();
@@ -95,5 +100,10 @@ export class RecipeList implements OnInit {
       meal: '',
     });
   }
+
+  goToAddRecipe(): void {
+    this.router.navigate(['/recipes/add']);
+  }
+
 }
 

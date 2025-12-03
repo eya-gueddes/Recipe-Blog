@@ -215,68 +215,6 @@
       "imageUrl": "/assets/recipes/stir_fry.png"
     },
     {
-      "id": "4",
-      "title": "Beef Tacos",
-      "description": "Soft tortillas filled with seasoned minced beef and fresh toppings.",
-      "meal": "Dinner",
-      "ingredients": [
-        {
-          "name": "Minced beef",
-          "quantity": "200g"
-        },
-        {
-          "name": "Taco seasoning",
-          "quantity": "1 packet or to taste"
-        },
-        {
-          "name": "Tortillas",
-          "quantity": "4 small"
-        },
-        {
-          "name": "Lettuce",
-          "quantity": "shredded, to taste"
-        },
-        {
-          "name": "Tomato",
-          "quantity": "diced, to taste"
-        },
-        {
-          "name": "Grated cheese",
-          "quantity": "to taste"
-        },
-        {
-          "name": "Sour cream",
-          "quantity": "to taste"
-        }
-      ],
-      "instructions": [
-        {
-          "step": 1,
-          "description": "Cook minced beef in a pan until browned."
-        },
-        {
-          "step": 2,
-          "description": "Add taco seasoning and a little water, simmer for 5 minutes."
-        },
-        {
-          "step": 3,
-          "description": "Warm tortillas in a pan or microwave."
-        },
-        {
-          "step": 4,
-          "description": "Fill tortillas with beef, shredded lettuce, diced tomato and cheese."
-        },
-        {
-          "step": 5,
-          "description": "Top with sour cream and serve."
-        }
-      ],
-      "prepTime": 10,
-      "cookTime": 15,
-      "servings": 2,
-      "imageUrl": "/assets/recipes/beef_tacos.png"
-    },
-    {
       "id": "5",
       "title": "Margherita Pizza",
       "description": "Simple pizza topped with tomato sauce, mozzarella and fresh basil.",
