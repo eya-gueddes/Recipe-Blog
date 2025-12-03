@@ -3,13 +3,19 @@ import {
   FormBuilder,
   FormGroup,
   ReactiveFormsModule,
-  Validators
+  Validators,
+  AbstractControl,
 } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RecipeService } from '../../services/recipe.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Recipe } from '../../models/recipe.model'; 
+import { Recipe } from '../../models/recipe.model';
+
+function requiredFormArray(control: AbstractControl) {
+  const arr = control as FormArray;
+  return arr && arr.length > 0 ? null : { required: true };
+}
 
 @Component({
   selector: 'app-add-form',
@@ -20,7 +26,8 @@ import { Recipe } from '../../models/recipe.model';
 })
 export class AddForm implements OnInit {
   addForm!: FormGroup;
-  editingId: string | null = null;  
+  editingId: string | null = null;
+  submitted = false;
 
   constructor(
     private fb: FormBuilder,
@@ -36,8 +43,8 @@ export class AddForm implements OnInit {
       cookTime: [0, Validators.min(0)],
       servings: [1, Validators.min(1)],
       imageUrl: [''],
-      ingredients: this.fb.array([]),
-      instructions: this.fb.array([]),
+      ingredients: this.fb.array([], requiredFormArray),
+      instructions: this.fb.array([], requiredFormArray),
     });
   }
 
@@ -51,9 +58,12 @@ export class AddForm implements OnInit {
     });
   }
 
-
   get ingredients() {
     return this.addForm.get('ingredients') as FormArray;
+  }
+
+  get instructions() {
+    return this.addForm.get('instructions') as FormArray;
   }
 
   addIngredient(ing?: any) {
@@ -65,10 +75,6 @@ export class AddForm implements OnInit {
     );
   }
 
-  get instructions() {
-    return this.addForm.get('instructions') as FormArray;
-  }
-
   addInstruction(ins?: any) {
     this.instructions.push(
       this.fb.group({
@@ -78,9 +84,20 @@ export class AddForm implements OnInit {
     );
   }
 
+  
+removeIngredient(index: number) {
+  this.ingredients.removeAt(index);
+  this.ingredients.markAsDirty();
+  this.ingredients.updateValueAndValidity();
+}
+
+removeInstruction(index: number) {
+  this.instructions.removeAt(index);
+  this.instructions.markAsDirty();
+  this.instructions.updateValueAndValidity();
+}
   private loadRecipeForEdit(id: string) {
     this.recipeService.getRecipeById(id).subscribe((recipe: Recipe) => {
-
       this.addForm.patchValue({
         title: recipe.title,
         description: recipe.description,
@@ -95,13 +112,12 @@ export class AddForm implements OnInit {
       this.instructions.clear();
 
       recipe.ingredients.forEach(ing => this.addIngredient(ing));
-
       recipe.instructions.forEach(ins => this.addInstruction(ins));
     });
   }
 
-
   onSubmit() {
+    this.submitted = true;
     if (this.addForm.invalid) {
       this.addForm.markAllAsTouched();
       return;
